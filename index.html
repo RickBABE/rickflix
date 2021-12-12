@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/main.css">
     <link 
         rel="preconnect" href="https://fonts.googleapis.com"> <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <title>RICKFLIX</title>
+    <title>RICKFLIX | Browser</title>
+    <link rel="icon" type="image/icon" href="images/letter-r-16.ico" alt="">
+    
+    <!--responsividade-->
+    <link rel="stylesheet" href="style/responsive.css">
+
 </head>
 
 <body>
@@ -17,38 +22,27 @@
             <div class="logo-container">
                 <h1 class="logo">RICKFLIX</h1>
             </div>
+            <header>
             <div class="menu-container">
                 <ul class="menu-list">
-                    <li class="menu-list-item">Home</li>
-                    <li class="menu-list-item">Filmes</li>
-                    <li class="menu-list-item">Séries</li>
-                    <li class="menu-list-item">Animes</li>
-                    <li class="menu-list-item">Popular</li>
-                    <li class="menu-list-item">Trends</li>
+                    <nav>
+                        <a href="index.html">Inicio</a>
+                        <a href="series.html">Séries</a>
+                        <a href="filmes.html">Filmes</a>
+                        <a href="animes.html">Animes</a>
+                        <a href="documentarios.html">Documentários</a>
+                    </nav>
                 </ul>
             </div>
+            </header>
             <div class="profile-container">
                 <img class="profile-picture" src="images/penguin.png" alt="">
                 <div class="profile-text-container">
-                    <span class="profile-text">Perfil</span>
+                    <span class="profile-text">Rick</span>
                     <i class="fas fa-caret-down"></i>
-                </div>
-                <div class="toggle">
-                    <i class="fas fa-moon toggle-icon"></i>
-                    <i class="fas fa-sun toggle-icon"></i>
-                    <div class="toggle-ball"></div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="sidebar">
-        <i class="left-menu-icon fas fa-search"></i>
-        <i class="left-menu-icon fas fa-home"></i>
-        <i class="left-menu-icon fas fa-users"></i>
-        <i class="left-menu-icon fas fa-bookmark"></i>
-        <i class="left-menu-icon fas fa-tv"></i>
-        <i class="left-menu-icon fas fa-hourglass-start"></i>
-        <i class="left-menu-icon fas fa-shopping-cart"></i>
     </div>
     <div class="container">
         <div class="content-container">
@@ -57,7 +51,7 @@
                 <p class="featured-desc">
                     Acompanhado por um caçador de recompensas, o escravo livre Django viaja pelos EUA para salvar sua esposa de um cruel fazendeiro.
                 </p>
-                <button class="featured-button">Assistir</button>
+                <a href="https://embed.uauflix.online/tt1853728"><button class="featured-button">Assistir</button></a>
             </div>
             <div class="movie-list-container">
                 <h1 class="movie-list-title">FILMES</h1>
@@ -66,47 +60,41 @@
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="images/filmes/1-her.jpeg" alt="Filme: Her.">
                             <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <button class="movie-list-item-button">Assistir</button>
+                            <p class="movie-list-item-desc">O solitário escritor Theodore desenvolve uma relação de amor especial com o novo sistema operacional do seu computador.</p>
+                            <a href="https://embed.uauflix.online/tt1798709" target="_blank"><button class="movie-list-item-button">Assistir</button></a>
+                            
                         </div>
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="images/filmes/2-parasite.jpg" alt="Filme: Parasita.">
                             <span class="movie-list-item-title">Parasite</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <button class="movie-list-item-button">Assistir</button>
+                            <p class="movie-list-item-desc">pai, mãe e filhos bolam um plano para se infiltrarem também na família burguesa, um a um.</p>
+                            <a href="https://embed.uauflix.online/tt6751668" target="_blank"><button class="movie-list-item-button">Assistir</button></a>
                         </div>
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="images/filmes/3-donniedarko.jpg" alt="Filme: Donnie Darko.">
                             <span class="movie-list-item-title">Donnie Darko</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <button class="movie-list-item-button">Assistir</button>
+                            <p class="movie-list-item-desc">Donnie é um jovem excêntrico que despreza a grande maioria de seus colegas de escola.</p>
+                            <a href="https://embed.uauflix.online/tt0246578" target="_blank"><button class="movie-list-item-button">Assistir</button></a>
                         </div>
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="images/filmes/4-oldboy.jpg" alt="Filme: Old Boy">
                             <span class="movie-list-item-title">Oldboy</span>
                             <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <button class="movie-list-item-button">Assistir</button>
+                            <a href="https://embed.uauflix.online/tt1321511" target="_blank"><button class="movie-list-item-button">Assistir</button></a>
                         </div>
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="images/filmes/5-asbranquelas.jpg" alt="Filme: As Branquelas">
                             <span class="movie-list-item-title">As Branquelas</span>
                             <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <button class="movie-list-item-button">Assistir</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="images/filmes/6-estranhomundojack.jpg" alt="Filme: O Estranho Mundo de Jack.">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <button class="movie-list-item-button">Assistir</button>
+                            <a href="https://embed.uauflix.online/tt0381707" target="_blank"><button class="movie-list-item-button">Assistir</button></a>
                         </div>
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="images/filmes/7-tenet.jpg" alt="Filme: Tenet.">
                             <span class="movie-list-item-title">Tenet</span>
                             <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <button class="movie-list-item-button">Assistir</button>
+                            <a href="https://embed.uauflix.online/tt6723592" target="_blank"><button class="movie-list-item-button">Assistir</button></a>
                         </div>
                     </div>
-                    <i class="fas fa-chevron-right arrow"></i>
                 </div>
             </div>
             <div class="featured-content" style="background: linear-gradient(to bottom, rgba(0,0,0,0 ), #151515), url(images/f-2.jpg);">
@@ -114,7 +102,7 @@
                 <p class="featured-desc">
                     Em 2019, o desaparecimento de um menino gera medo entre os moradores de Winden, uma pequena cidade alemã com uma história estranha e trágica.
                 </p>
-                <button class="featured-button">Assistir</button>
+                <a href="https://embed.uauflix.online/tv/70523/1/1/dub"><button class="featured-button">Assistir</button></a>
             </div>
             <br>
             <br>
@@ -126,25 +114,19 @@
                             <img class="movie-list-item-img" src="images/series/1-blackmirror.jpg" alt="Série: Black Mirror.">
                             <span class="movie-list-item-title">Black Mirror</span>
                             <p class="movie-list-item-desc">Contos de ficção científica que refletem o lado negro das telas e da tecnologia, mostrando que nem toda novidade traz só benefícios.</p>
-                            <button class="movie-list-item-button">Assistir</button>
+                            <a href="https://embed.uauflix.online/tt0246578" target="_blank"><button class="movie-list-item-button">Assistir</button></a>
                         </div>
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="images/series/2-dark.png" alt="Série: Dark.">
                             <span class="movie-list-item-title">Dark</span>
                             <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <button class="movie-list-item-button">Assistir</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="images/series/3-madmen.jpg" alt="Série: Mad Men.">
-                            <span class="movie-list-item-title">Mad Men</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <button class="movie-list-item-button">Assistir</button>
+                            <a href="https://embed.uauflix.online/tt0246578" target="_blank"><button class="movie-list-item-button">Assistir</button></a>
                         </div>
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="images/series/4-voce.jpg" alt="Série: Você.">
                             <span class="movie-list-item-title">Você</span>
                             <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <button class="movie-list-item-button">Assistir</button>
+                            <a href="https://embed.uauflix.online/tv/78191/1/1/dub" target="_blank"><button class="movie-list-item-button">Assistir</button></a>
                         </div>
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="images/series/5-theoffice.jpg" alt="Série: The Office.">
@@ -165,70 +147,12 @@
                             <button class="movie-list-item-button">Assistir</button>
                         </div>
                     </div>
-                    <i class="fas fa-chevron-right arrow"></i>
                 </div>
-            </div>
-            <div class="featured-content" style="background: linear-gradient(to bottom, rgba(0,0,0,0 ), #151515), url(images/f-3.jpg);">
-                <img class="featured-title" src="images/f-t-3.png" alt="">
-                <p class="featured-desc">
-                    Nesta animação, uma jovem bruxa se afasta de sua família para praticar sua feitiçaria. Entretanto, logo ela percebe que fazer novos amigos pode ser difícil.
-                </p>
-                <button class="featured-button">Assistir</button>
             </div>
             <br>
             <br>
-            <div class="movie-list-container">
-                <h1 class="movie-list-title">ANIMES</h1>
-                <div class="movie-list-wrapper">
-                    <div class="movie-list">
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="images/animes/1-vidasaovento.jpg" alt="Anime: Vidas ao Vento.">
-                            <span class="movie-list-item-title">Vidas ao Vento</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <button class="movie-list-item-button">Assistir</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="images/animes/2-kiki.jpg" alt="Anime: O Serviço de Entregas da Kiki.">
-                            <span class="movie-list-item-title">O Serviço de Entregas da Kiki</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <button class="movie-list-item-button">Assistir</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="images/animes/3-fireflies.jpg" alt="Anime: Túmulo de Vagalumes.">
-                            <span class="movie-list-item-title">Túmulo de Vagalumes</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <button class="movie-list-item-button">Assistir</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="images/animes/4-ponyo.jpg" alt="Anime: Ponyo.">
-                            <span class="movie-list-item-title">Ponyo</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <button class="movie-list-item-button">Assistir</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="images/animes/5-chihiro.jpg" alt="Anime: A Viagem de Chihiro.">
-                            <span class="movie-list-item-title">A Viagem de Chihiro</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <button class="movie-list-item-button">Assistir</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="images/animes/6-totoro.jpg" alt="Anime: Meu Amigo Totoro.">
-                            <span class="movie-list-item-title">Meu Amigo Totoro</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <button class="movie-list-item-button">Assistir</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="images/animes/7-nausica.png" alt="Anime: Nausica.">
-                            <span class="movie-list-item-title">Nausica</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <button class="movie-list-item-button">Assistir</button>
-                        </div>
-                    </div>
-                    <i class="fas fa-chevron-right arrow"></i>
-                </div>
-            </div>
         </div>
     </div>
-    <script src="app.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
