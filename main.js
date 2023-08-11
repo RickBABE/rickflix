@@ -32,3 +32,16 @@ ball.addEventListener("click", ()=> {
   })
   ball.classList.toggle("active")
 })
+
+
+var type = "serie";
+var imdb = "tt13056754";
+var season = "1";
+var episode = "1";
+var ref = document.referrer;
+embedderPlugin(type, imdb, season, episode);
+function embedderPlugin(type, imdb, season, episode){
+if (type == "filme") { season="";episode="";}else{if (season !== "") { season = "/"+season; }if (episode !== "") { episode = "/"+episode; }}
+    var frame = document.getElementById('EmbedderIframe');
+    frame.innerHTML += '<iframe src="https://embedder.net/e/'+imdb+season+episode+'?ref='+ref+'" scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>';
+}

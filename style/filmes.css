@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+
+header nav a{
+text-decoration:none;
+color:#AAA;
+margin-right: 10px;
+}
+
+header nav a:hover{
+    color: red;
+}
+
+.navbar-container{
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    height: 100%;
+    color: white;
+    font-family: 'Sen', 'sans-serif';
+}
+
+.logo-container{
+    flex: 1;
+}
+
+.logo{
+    margin-left: 2px;
+    color: red;
+    font-family: 'Arial Black', 'Times';
+    font-size:40px;
+}
+
+.menu-container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 90px;
+    flex: 6;
+}
+
+.menu-list{
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+}
+
+.menu-list-item{
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.menu-list-item.active{
+    font-weight: bold;
+}
+
+.menu-list-item:hover,
+.menu-list-item.active {
+    text-decoration:none;
+    color: #AAA;
+    border-radius: 40%; /*como aumentar a caixa?*/
+}
+
+.profile-container{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.profile-text-container{
+    margin: 0 20px;
+}
+
+.profile-picture{
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.container{
+    background-color: #151515;
+    min-height: calc(100vh - 50px);
+    color: white;
+}
+
+.content-container{
+    margin-left: 0;
+}
+
+.featured-content{
+    height: 90vh;
+    padding: 10px;
+}
+
+.featured-title{
+    width: 300px;
+}
+
+.featured-desc{
+    width: 500px;
+    color: lightgray;
+    margin: 5px 0;
+    padding: 10px;
+}
+
+.featured-button{
+    background-color: #4dbf00;
+    color: white;
+    padding: 15px 50px;
+    border-radius: 700px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.movie-list-container{
+    padding: 10px;
+}
+
+.movie-list-wrapper{
+    position: relative;
+    overflow: hidden;
+}
+
+.movie-list{
+    display: flex;
+    align-items: center;
+    height: 250px;
+    transform: translateX(0);
+    transition: all 2s ease-in-out;
+}
+
+.movie-list-item{
+    margin-right: 5px;
+    position: relative;
+}
+
+.movie-list-item:hover .movie-list-item-img{
+    transform: scale(1.2);
+    margin: 0 30px;
+    opacity: 0.5;
+}
+
+.movie-list-item:hover .movie-list-item-title,
+.movie-list-item:hover .movie-list-item-desc,
+.movie-list-item:hover .movie-list-item-button{
+    opacity: 1;
+}
+
+.movie-list-item-img{
+    transition: all 1s ease-in-out;
+    width: 300px; /*mudar tamanho dos blocos de filmes*/
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.movie-list-item-title{
+    padding: 0 10px;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 50px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+
+.movie-list-item-desc{
+    padding: 10px;
+    font-size: 14px;
+    position: absolute;
+    top: 30%;
+    left: 50px;
+    width: 230px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+
+.movie-list-item-button{
+    padding: 10px;
+    background-color: #4dbf00;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+
+.container.active{
+    background-color: white;
+}
+
+.movie-list-title.active{
+    color: black;
+}
+
+.navbar-container.active{
+    background-color: white;
+    color: black
+}
